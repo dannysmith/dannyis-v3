@@ -1,0 +1,21 @@
+ul.c-leaders {
+  overflow-x: hidden;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+
+  li {
+    background: url(/images/bg-leaders.png) transparent 0 17px repeat-x;
+  }
+
+  li > span {
+    background-color: $cBG;
+    padding-right: .5em;
+  }
+  li > span.fwb {
+    float: right;
+    background-color: $cBG;
+    padding-left: .5em;
+    font-weight: 500;
+  }
+}

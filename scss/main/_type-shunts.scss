@@ -1,0 +1,27 @@
+// Shunt typography onto baseline.
+// This will ikeley need adjusting if the font is changed
+
+h1, .h1 {
+  position: relative;
+  top: .2rem;
+}
+
+h2, .h2 {
+  position: relative;
+  top: .4rem;
+}
+
+h3, .h3 {
+  position: relative;
+  top: -.1rem;
+}
+
+h4, .h4 {
+  position: relative;
+  top: -.1rem;
+}
+
+.large {
+  position: relative;
+  top: .4rem;
+}

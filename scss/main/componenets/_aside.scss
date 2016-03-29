@@ -1,0 +1,12 @@
+.c-aside {
+  background: $light-teal;
+  padding: 1rem;
+  font-size: $tsSmall;
+
+  // Remove bottom margin from the last element.
+  & > :last-child {margin-bottom: 0;}
+
+  p, ul, ol {
+    font-size: small;
+  }
+}

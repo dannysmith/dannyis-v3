@@ -1,0 +1,12 @@
+.c-page-footer {
+  text-align: center;
+  font-size: $tsSmall;
+  color: $cream;
+  background: $black;
+  min-height: $tLHrem * 2;
+  line-height: $tLHrem * 2;
+  p {margin: 0}
+
+  a {border-bottom: 1px dotted transparentize($yellow, .5);}
+  a:hover {background: $yellow; color: $black}
+}

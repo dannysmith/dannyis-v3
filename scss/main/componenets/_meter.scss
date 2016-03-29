@@ -1,0 +1,40 @@
+$cMeter: $red;
+
+.c-meter {
+    height: $tLHrem * 2;
+}
+
+.c-meter progress {
+  width: 100%;
+  height: $tHLHrem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background: transparentize($cMeter, .6);
+  color: $cMeter;
+
+  &::-webkit-progress-bar {
+    background: transparentize($cMeter, .6);
+  }
+
+  &::-webkit-progress-value {
+    background: $cMeter;
+  }
+
+  &::-moz-progress-bar {
+    background: $cMeter;
+  }
+}
+
+.c-meter-header {
+  font-size: $tsSmall;
+  line-height: $tHLH;
+
+  > span.fwb {
+    font-size: $tsLarge;
+    float: right;
+    font-weight: 500;
+  }
+}

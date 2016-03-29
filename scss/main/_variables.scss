@@ -1,0 +1,60 @@
+// Color Palette
+// ----------------------------------------------
+$black: #000;
+$grey: lighten(#000, 10%);
+$cream: #F4F1EE;
+$white: #fff;
+$teal: #04BBC2;
+$yellow: #FFDE59;
+$red: #8F3643;
+// Main Website Background Color
+$cBG: $white;
+$light-teal: #A9CDCF;
+
+// Links & Inline Text Treatment Colors
+$cLinkUnderline: $teal;
+$cLinkHover: $teal;
+$cSelection: $yellow;
+$cMarked: $yellow;
+$cStrikethrough: lighten(#000, 40%);
+
+// Type Scale
+// ---------------------------------------------
+// There are really only two varibles that matter when designing generally:
+//   $tLH and $tHLH contain should be used for heights.
+//   They keep things aligned on the baseline grid properly.
+//   Both have suffixes for outputting rems or ems.
+//
+// Type sizes should be set with the $ts<size> series of variables.
+//
+// Typefaces should be set with the $tf<face> series of variables.
+
+// These values are used to set the base font of the html element at different viewport widths,
+//   and to calculate the values.
+$typeBaseAtNarrowWidth:     18; // Font size set on <html> at narrow viewport width
+$typeBaseAtMediumWidth:     21;
+$typeBaseAtWideWidth:       14;
+
+// Line Height
+$tLH: 1.5;              // Base Line Height (as plain number)
+$tLHem: $tLH * 1em;     // Base Line Height in ems
+$tLHrem: $tLH * 1rem;   // Base Line Height in rems
+$tHLH: $tLH / 2;        // Half Base Line Height (as plain number)
+$tHLHem: $tHLH * 1em;   // Base Line Height in ems
+$tHLHrem: $tHLH * 1rem; // Base Line Height in rems
+
+// Type Scale in ems
+$ts1:       (48 / $typeBaseAtNarrowWidth) * 1rem;
+$ts2:       (36 / $typeBaseAtNarrowWidth) * 1rem;
+$ts3:       (24 / $typeBaseAtNarrowWidth) * 1rem;
+$ts4:       (24 / $typeBaseAtNarrowWidth) * 1rem;
+$tsLarge:   (20 / $typeBaseAtNarrowWidth) * 1rem;
+$tsPara:   (18 / $typeBaseAtNarrowWidth) * 1rem;
+$tsSmall:   (14 / $typeBaseAtNarrowWidth) * 1rem;
+$tsXSmall:  (10 / $typeBaseAtNarrowWidth) * 1rem;
+
+// Font faces
+$tfBody: "Avenir Next", sans-serif;
+$tfCode: "Inconsolata", monospace;
+
+

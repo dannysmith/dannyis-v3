@@ -1,0 +1,51 @@
+// Disable Hover
+.u-disable-hover {
+  pointer-events: none;
+}
+
+// Hide everywhere
+.u-hidden {
+    display: none !important;
+}
+
+.u-smallnums {
+    font-size: .8em;
+    letter-spacing: .02em;
+    font-weight: 500
+}
+
+// Pad all around by 1LH
+.u-pad-1 {
+  padding: $tLHrem;
+}
+
+// Pad all around by 0.5 LH
+.u-pad-half {
+  padding: $tLHrem / 2;
+}
+
+// Hide only visually, but have it available for screen readers:
+// http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+.u-visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+// Clearfixes
+.u-clearfix:before,
+.u-clearfix:after {
+    content: " ";
+    display: table;
+}
+.u-clearfix:after {
+    clear: both;
+}
+.u-clearfix {
+    *zoom: 1;
+}

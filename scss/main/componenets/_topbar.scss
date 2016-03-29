@@ -1,0 +1,10 @@
+.c-topbar { height: 0.2rem; position: absolute; left: 0; right: 0; top: 0;}
+.c-topbar > div {float: left; height: 0.2rem;}
+.c-topbar > div:nth-child(1) {  background: $yellow; width: 100%;}
+
+// .c-topbar > div:nth-child(1) { background-color: #051D22; width: 14%; }
+// .c-topbar > div:nth-child(2) { background-color: #A9CDCF; width: 20%; }
+// .c-topbar > div:nth-child(3) { background-color: #FED788; width: 11%; }
+// .c-topbar > div:nth-child(4) { background-color: #8F3643; width: 27%; }
+// .c-topbar > div:nth-child(5) { background-color: #65C0C3; width: 13%; }
+// .c-topbar > div:nth-child(6) { background-color: #3D4451; width: 15%; }

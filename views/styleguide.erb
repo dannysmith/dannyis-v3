@@ -1,0 +1,391 @@
+<% content_for :title do %>🖥 Styleguide &amp; Colophon – Danny Smith<% end %>
+<% content_for :styles do %>
+  <link rel="stylesheet" href="css/pages/styleguide.css">
+<% end %>
+<%= erb :'partials/_topbar' %>
+
+<div class="u-csl u-pad-1">
+  <h5>This is the Styleguide</h5>
+
+  <div class="c-notice">
+    <div class="c-notice__icon">
+      <i class="u-icon u-icon-tags"></i>
+    </div>
+    <div class="c-notice__content">
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui cupiditate corrupti cumque velit incidunt officiis accusantium odio facilis, a quaerat temporibus harum, suscipit similique repudiandae adipisci iste, tempore dolorem quos!</p>
+    </div>
+  </div>
+
+
+  <h4 class="styleguide-heading">Headings</h4>
+
+  <h1>This is a Level One Heading</h1>
+  <h2>This is a Level Two Heading</h2>
+  <h3>This is a Level Three Heading</h3>
+  <h4>This is a Level Four Heading</h4>
+  <h5>This is a Level Five Heading</h5>
+
+
+
+
+
+  <h4 class="styleguide-heading">Inline List</h4>
+  <ul class="inline u-clearfix">
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+  </ul>
+
+
+
+
+
+  <h4 class="styleguide-heading">Unordered List</h4>
+  <ul>
+    <li>
+      List Item Number One
+      <ul class="sublist">
+        <li>Subitem 1</li>
+        <li>Subitem 2</li>
+      </ul>
+    </li>
+    <li>List Item Number Two</li>
+    <li>List Item Number Three</li>
+  </ul>
+
+
+
+
+
+  <h4 class="styleguide-heading">Ordered List</h4>
+  <ol>
+    <li>
+      List Item Number One
+      <ul class="sublist">
+        <li>Subitem 1</li>
+        <li>Subitem 2</li>
+      </ul>
+    </li>
+    <li>List Item Number Two</li>
+    <li>List Item Number Three</li>
+  </ol>
+
+
+
+
+  <h3 class="styleguide-heading">Paragraph Styles</h3>
+  <h2>The Chicken Coop</h2>
+  <p class="large">Today I built a chicken coop. There are 16 pchicks in the garage, all cheeps and poops, growing bigger every day. I built a chicken coop because soon they will be too big for their brooder and they’ll need a house to live in.</p>
+  <h3>The Chicken Coop in More detail</h3>
+  <p>There are <a href="#">16 chgicks in a pbrooder in the garage because last</a> year we <kbd>Ctrl + A</kbd> bought eight, and they grew up to be happy chickens that provide us with breakfast <strike>every morning and amusement every day</strike>. They eat the bugs in the garden and their poop makes great fertilizer after it’s composted a while. The fertilizer feeds the vegetable garden, which feeds us.</p>
+  <p>We got the eight chicks last year because we moved to rural Oregon and we suddenly could. <mark>I’d wanted chickens ever since I watched them scratch and peck their</mark> way through a friend’s yard. It’s calming, Zen-like, watching chickens do their thing.</p>
+  <p>We moved to rural Oregon because, when we were looking for houses in Portland, my wife and I both found we had a craving for acreage. After decades of living in dense cities, Heather and I had an intense longing for more space, fewer neighbors, and a lot less computer time.</p>
+  <h4>Some other Stuff to Consider</h4>
+  <p>We were moving to <del>Portland</del> because <code class="pp">Heather had one of those awesome</code> internet jobs she could do from anywhere, and my job as the CEO of a startup in San Francisco had just ended suddenly and without warning. Just like the startup before that and the startup before that.</p>
+  <p>I worked in startups because, when the web began, startups were all there were. There was no internet industry. There was just us fresh-out-of-college kids with useless BAs and an endless green field that started with “www.”</p>
+  <p>I was in San Francisco because there were no jobs in Santa Cruz after I graduated. When I was in college, you could always spot my dorm room because it was the one with all the plants. I used to pocket beans from the salad bar in the dining room, plant them, put them in my one solitary window, and grow the vines.</p>
+  <p>I don’t know why I did that. I just did.</p>
+  <p class='small'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat. Sed vulputate fringilla felis. Aliquam ut arcu et dui feugiat scelerisque eu quis diam. Mauris placerat congue dui sit amet blandit. Phasellus condimentum libero vel velit auctor, sit amet tincidunt velit varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat. Sed vulputate fringilla felis. Aliquam ut arcu et dui feugiat scelerisque eu quis diam. Mauris placerat congue dui sit amet blandit. Phasellus condimentum libero vel velit auctor, sit amet tincidunt velit varius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem animi, autem earum sit error, ab, iste debitis minima sapiente itaque beatae nulla ipsa sequi repellat doloribus, dolorum ipsum laboriosam vitae.</p>
+
+
+
+  <h4 class="styleguide-heading">Tables</h4>
+  <table>
+    <thead>
+      <tr>
+        <th class="left">Name</th>
+        <th>Surname</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="left">Danny</td>
+        <td>Smith</td>
+        <td>29</td>
+      </tr>
+      <tr>
+        <td class="left">Joe</td>
+        <td>Bloggs</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td class="left">James</td>
+        <td>Noodle</td>
+        <td>32</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+  <h4 class="styleguide-heading">Badges and Tags</h4>
+  <span class="badge">6</span>
+  <span class="badge">This is a longer badge</span>
+  <span class="tag">This is a tag</span>
+
+
+
+
+
+
+  <h4 class="styleguide-heading">Breadcrumbs</h4>
+  <nav role="navigation">
+    <ol class="c-breadcrumbs inline u-clearfix">
+      <li><a href="#">First Parent Entity</a></li>
+      <li><a href="#">Second Parent Entity</a></li>
+    </ol>
+  </nav>
+
+
+
+
+
+
+</div><!-- End csl container -->
+
+
+
+
+
+
+<div style="padding: 27px;">
+
+  <h4 class="styleguide-heading">Basic Card</h4>
+  <style>.c-card{margin-top: 2rem;}</style>
+  <div class="c-card">
+    <div class="c-card__content">
+      This is a very basic card. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae vero, voluptatem et doloremque error autem sint omnis sapiente. Blanditiis quidem beatae culpa, in ipsam dolores voluptas impedit modi quis nemo.
+    </div>
+  </div>
+
+  <div class="c-card">
+    <div class="c-card__content">
+      <h4 class="c-card__title">Card Title</h4>
+      This is a basic card with some stuff in the actions. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae vero, voluptatem et doloremque error autem sint omnis sapiente. Blanditiis quidem beatae culpa, in ipsam dolores voluptas impedit modi quis nemo.
+    </div>
+    <div class="c-card__action u-csl">
+      <a href="#">Do something</a>
+      <a href="#">Do something else</a>
+    </div>
+  </div>
+
+  <div class="c-card">
+    <div class="c-card__content">
+      <h4 class="c-card__title">Card Title</h4>
+      This is a basic card with one button in the actions. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae vero, voluptatem et doloremque error autem sint omnis sapiente. Blanditiis quidem beatae culpa, in ipsam dolores voluptas impedit modi quis nemo.
+    </div>
+    <div class="c-card__action single-button">
+      <a href="#" class="btn">Do something</a>
+    </div>
+  </div>
+
+  <h4 class="styleguide-heading">Image Card</h4>
+
+  <div class="c-card image">
+    <div class="c-card__image">
+      <img src="/images/sample-1.jpg" alt="">
+      <h4 class="c-card__title">Card Title</h4>
+    </div>
+    <div class="c-card__content">
+      This is an Image card. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae vero, voluptatem et doloremque error autem sint omnis sapiente. Blanditiis quidem beatae culpa, in ipsam dolores voluptas impedit modi quis nemo.
+    </div>
+    <div class="c-card__action u-csl">
+      <a href="#" class="">Do something</a>
+    </div>
+  </div>
+
+
+  <h4 class="styleguide-heading">Link Cards</h4>
+
+  <div class="c-card link">
+    <a href="#" class="c-card__image">
+      <img src="https://d262ilb51hltx0.cloudfront.net/fit/c/600/200/1*-M-lPZySc0avkf7c5NmYyg.jpeg" alt="">
+      <h4 class="c-card__title">Slack for Enterprise</h4>
+    </a>
+    <div class="c-card__content">
+      How a simple but delightful communication tool is changing the way companies do business
+    </div>
+    <div class="c-card__action single-button">
+      <a href="https://medium.com/sparta-global/slack-for-enterprise-d60554c5ea19?source=rss-7eef63fdd71e------2" class="btn">Read on Medium</a>
+    </div>
+  </div>
+
+  <div class="c-card link">
+    <a href="#" class="c-card__image"><!-- Note that we use this as a wrapper, even if no image is provided -->
+      <h4 class="c-card__title">Link without a title</h4>
+    </a>
+    <div class="c-card__content">
+      This is a link card with no image. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae vero, voluptatem et doloremque error autem sint omnis sapiente. Blanditiis quidem beatae culpa, in ipsam dolores voluptas impedit modi quis nemo.
+    </div>
+    <div class="c-card__action">
+      Posted at sometime. <span class="tag">one</span> <span class="tag">one</span>
+    </div>
+  </div>
+
+  <h4 class="styleguide-heading">Embed Cards</h4>
+
+  <div class="c-card embed">
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/Aqt9HW_Qcfo" frameborder="0" allowfullscreen></iframe>
+    <div class="c-card__action u-csl">
+      View on <a href="#">Youtube</a>. <span class="tag">productivity</span>
+    </div>
+  </div>
+
+  <div class="c-card embed">
+    <script async class="speakerdeck-embed" data-id="cc9ecfc0c16a0131e0fe72c781b73270" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+    <div class="c-card__action u-csl">
+      View on <a href="#">Youtube</a>. <span class="tag">productivity</span>
+    </div>
+  </div>
+
+  <div class="c-card embed">
+    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/29705410&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    <div class="c-card__action u-csl">
+      View on <a href="#">Soundcloud</a>.
+    </div>
+  </div>
+
+  <h4 class="styleguide-heading">Photo Cards</h4>
+
+  <div class="c-card photo">
+    <a href="#" class="c-card__image">
+      <img src="/images/sample-2.jpg" alt="">
+      <span class="c-card__photometa">Slack for Enterprise</span>
+    </a>
+  </div>
+
+  <h4 class="styleguide-heading">Quote Cards</h4>
+
+  <div class="c-card quote">
+    <div class="c-card__content">
+      <blockquote>
+        This is a very short quote. Not many chatacters at all.
+        <footer>– Jonas Manfish</footer>
+      </blockquote>
+    </div>
+    <div class="c-card__action u-csl">
+      <a href="#"><i class="u-icon u-icon-social-twitter"></i> Tweet This</a>
+      <a href="#">Hit me up somewhere else</a>
+    </div>
+  </div>
+
+    <div class="c-card quote short">
+    <div class="c-card__content">
+      <blockquote>
+        This is a very short quote. Not many chatacters at all.
+        <footer>– Jonas Manfish</footer>
+      </blockquote>
+    </div>
+    <div class="c-card__action u-csl">
+      <a href="#"><i class="u-icon u-icon-social-twitter"></i> Tweet This</a>
+      <a href="#">Hit me up somewhere else</a>
+    </div>
+  </div>
+
+    <div class="c-card quote medium">
+    <div class="c-card__content">
+      <blockquote>
+        This is a normal quote. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae vero, voluptatem et doloremque error autem sint omnis sapiente.
+        <footer>– Jonas Manfish</footer>
+      </blockquote>
+    </div>
+    <div class="c-card__action u-csl">
+      <a href="#"><i class="u-icon u-icon-social-twitter"></i> Tweet This</a>
+      <a href="#">Hit me up somewhere else</a>
+    </div>
+  </div>
+
+    <div class="c-card quote long">
+    <div class="c-card__content">
+      <blockquote>
+        This is a very long quote. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae vero, voluptatem et doloremque error autem sint omnis sapiente. Blanditiis quidem beatae culpa, in ipsam dolores voluptas impedit modi quis nemo.
+        <footer>– Jonas <a href="#">Manfish</a></footer>
+      </blockquote>
+    </div>
+    <div class="c-card__action u-csl">
+      <a href="#"><i class="u-icon u-icon-social-twitter"></i> Tweet This</a>
+      <a href="#">Hit me up somewhere else</a>
+    </div>
+  </div>
+
+  <h4 class="styleguide-heading">Aside</h4>
+  <aside class="c-aside">
+    <!-- <i class="u-icon u-icon-tags pull-left"></i> -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, beatae, dolorem. Nostrum exercitationem perferendis provident nihil aliquam laboriosam, numquam sequi, obcaecati fugit earum culpa, temporibus accusantium cum doloribus iusto eveniet!</p>
+  </aside>
+
+
+</div><!-- End wrapper for cards -->
+
+<div class="u-csl u-pad-1">
+
+
+
+  <h4 class="styleguide-heading">Meter</h4>
+  <div class="c-meter">
+    <div class="c-meter-header">
+      <span >Number of People</span>
+      <span class="fwb">40%</span>
+    </div>
+    <progress value="4" min="0" max="10"></progress>
+  </div>
+
+
+
+
+
+  <h4 class="styleguide-heading">Leaders</h4>
+  <ul class="c-leaders">
+    <li><span>JavaScript</span><span class="fwb">60%</span></li>
+    <li><span>Ruby</span><span class="fwb">95%</span></li>
+  </ul>
+
+
+
+
+  <h4 class="styleguide-heading">Buttons</h4>
+  <input type="button" class="btn" value="Button"><br>
+  <a href="#" class="btn">Link</a><br>
+  <input type="button" class="btn btn-small" value="Button"><br>
+  <a href="#" class="btn btn-small">Link</a><br>
+
+  <br>
+
+  <input type="button" class="btn pressed" value="Button"><br>
+  <a href="#" class="btn pressed">Link</a><br>
+  <input type="button" class="btn btn-small pressed" value="Button"><br>
+  <a href="#" class="btn btn-small pressed">Link</a><br>
+
+  <br>
+
+  <input type="button" class="btn disabled" value="Button">
+  <a href="#" class="btn disabled">Link</a>
+  <input type="button" class="btn btn-small disabled" value="Button">
+  <a href="#" class="btn btn-small disabled">Link</a>
+
+
+
+
+
+
+</div><!-- End csl container -->
+
+
+
+
+
+<p>Styleguide and Colophon</p>
+
+<h2>Colophon</h2>
+
+<ul>
+  <li>Built with Sinatra and SCSS</li>
+  <li>View the <a href="http://cssstats.com/stats?url=http%3A%2F%2Fdanny.is">CSS statistics</a>.</li>
+  <li></li>
+</ul>
+
+
+<h2>Styleguide</h2>
+

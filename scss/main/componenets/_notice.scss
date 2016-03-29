@@ -1,0 +1,25 @@
+.c-notice {
+  background: #252324;
+  font-size: $tsSmall;
+  line-height: $tLHrem;
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    flex: 1 1 4rem;
+    color: $yellow;
+    text-align: center;
+
+     // Hide if there's no content in the icon container and at small viewports.
+    &:empty {display:none;}
+    @media screen and (max-width: 600px) {display: none;}
+  }
+
+  &__content {
+    background: $yellow;
+    padding: $tHLHrem;
+
+    // Remove padding from last item
+    & > :last-child {margin-bottom: 0;}
+  }
+}

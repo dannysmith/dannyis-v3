@@ -1,0 +1,27 @@
+.badge {
+  background-color: $red;
+  color: $white;
+  font-size: $tsSmall;
+  border-radius: 1em;
+  padding: .1em .6em;
+  line-height: 1;
+}
+
+.tag {
+  background-color: $yellow;
+  color: $black;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  font-size: $tsSmall;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  padding: .1em .6em;
+  line-height: 1;
+
+  &:before {
+    content: "•";
+    color: $black;
+    padding-right: .6em;
+  }
+}

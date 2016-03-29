@@ -1,0 +1,185 @@
+// ==========================================================================
+// Base styles: Defaults and Overrides
+// ==========================================================================
+
+// Set box-sizing.
+html {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// Remove text-shadow in selection highlight:
+// https://twitter.com/miketaylr/status/12228805301
+// These selection rule sets have to be separate.
+// Customize the background color to match your design.
+::-moz-selection {
+    background: $cSelection;
+    text-shadow: none;
+}
+
+::selection {
+    background: $cSelection;
+    text-shadow: none;
+}
+
+// A better looking default horizontal rule
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $black;
+    margin: 1em 0;
+    padding: 0;
+}
+
+// Remove the gap between audio, canvas, iframes,
+// images, videos and the bottom of their containers:
+// https://github.com/h5bp/html5-boilerplate/issues/440
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+//Remove default fieldset styles.
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+// Allow only vertical resizing of textareas.
+textarea {
+    resize: vertical;
+}
+
+
+// ==========================================================================
+// Base styles: Typography and color
+// ==========================================================================
+
+html {
+    font-family: $tfBody;
+    color: $black;
+    font-size: $typeBaseAtNarrowWidth * 1px;
+    line-height: $tLH; /* 27px @ 18px FS */
+    font-variant-ligatures: common-ligatures discretionary-ligatures;
+}
+
+body {
+  padding: 0;
+  min-height: 100vh;
+}
+
+// Universal 1LH Vertical Margins (on bottom of elements only)
+p, h1, h2, h3, h4, h5 {
+  margin-top: 0;
+  margin-bottom: $tLHrem;
+}
+
+// Universal heading rendering
+h1, h2, h3, h4, h5 {
+  -webkit-text-rendering: optimizeLegibility;
+          text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "kern" 1;
+}
+
+// Universal Font sizes, line-heights and weights
+// Actual p, ol and ul elements inherit from body.
+// We can use the .p class to force other items to appear as paras.
+.p {
+    font-size: $tsPara;
+}
+h1, .h1 {
+    font-size: $ts1;
+    line-height: $tLHrem * 2;
+    font-weight: 300;
+}
+h2, .h2 {
+    font-size: $ts2;
+    line-height: $tLHrem * 2;
+}
+
+h3, .h3 {
+    font-size: $ts3;
+    line-height: $tLHrem;
+}
+
+h4, .h4 {
+    font-size: $ts3;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    line-height: $tLHrem;
+}
+h5, .h5 {
+    font-size: $tsPara;
+}
+
+
+.large {
+    font-size: $ts4;
+    font-weight: 300; // Light
+    line-height: $tHLHrem * 3;
+    -webkit-font-smoothing: antialiased;
+}
+
+.small {
+    font-size: $tsSmall;
+    line-height: $tLHrem;
+}
+
+// Apply top margin to headings/large blocks which follow a paragraph.
+p + h1      {margin-top: $tLHrem * 3;}
+p + h2      {margin-top: $tLHrem * 2;}
+p + h3      {margin-top: $tLHrem * 2;}
+p.large + p {margin-top: $tLHrem * 2;}
+
+
+
+// ==========================================================================
+// Base styles: Inline Text Treatments
+// ==========================================================================
+
+del {
+  position: relative;
+  text-decoration: none;
+  color: $cStrikethrough;
+}
+
+del:after {
+  border-bottom: 1px solid $cStrikethrough;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 60%;
+}
+
+// Marked Text
+mark {
+  background: $cMarked;
+}
+
+
+// ==========================================================================
+// Structural Layout for Navigation, footers etc
+// ==========================================================================
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1
+}
+
+

@@ -1,0 +1,32 @@
+// Remove styling from links
+// Styling should be applied to links inside the modules that describe them
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// This should be applied to all containers that should show standard underlined links.
+.u-csl { // "Contains Standard Links"
+  a:not(.btn),
+  a:not(.btn):hover,
+  a:not(.btn):visited,
+  a:not(.btn):active {
+    color: black;
+    background-image: linear-gradient(to bottom, $cBG 75%, $cLinkUnderline 75%);
+    background-size: 5px 5px;
+    background-position: 0 .95em;
+    background-repeat: repeat-x;
+
+    text-shadow: 2px 0 $cBG,
+                -2px 0 $cBG,
+                -3px 0 $cBG,
+                 0 2px $cBG,
+                -1px 1px $cBG,
+                 1px 1px $cBG;
+  }
+
+  a:not(.btn):hover {
+    background-image: linear-gradient(to bottom, $cBG 75%, $cLinkHover 75%);
+    color: $cLinkHover;
+  }
+}

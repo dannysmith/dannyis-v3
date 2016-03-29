@@ -1,0 +1,17 @@
+.c-breadcrumbs {
+  text-transform: lowercase;
+  font-variant: small-caps;
+
+  li {
+    &:before {
+      content: '\003E';
+      padding-right: 1em;
+      font-size: .7em;
+    }
+
+    &:first-child:before {
+    content: '';
+    padding: 0;
+    }
+  }
+}

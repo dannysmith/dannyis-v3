@@ -1,0 +1,23 @@
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: $tHLHrem;
+
+  &.left {text-align: left}
+}
+
+th {
+  background-color: $yellow;
+  border-bottom: 1px solid $black;
+  height: $tLHrem * 2;
+}
+
+tr:nth-child(even) {
+  background-color: darken($white, 2%);
+}

@@ -1,0 +1,14 @@
+.c-card.link {
+  .c-card__title {
+    font-size: $tsLarge; //Smaller font size for Link titles, since they're often longer.
+  }
+
+  .c-card__image {
+    background-color: navy;
+    background-image: url(/images/link-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+}
+

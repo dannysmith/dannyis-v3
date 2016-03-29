@@ -1,0 +1,7 @@
+.DS_Store
+.bundle/**/*
+.sass-cache/**/*
+.env
+articles/.Ulysses-Group.plist
+articles/.UlyssesRoot
+articles/**/.Ulysses-Group.plist

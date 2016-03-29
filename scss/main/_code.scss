@@ -1,0 +1,26 @@
+.gist,
+code,
+.highlight pre {
+  font-family: $tfCode;
+}
+
+// Inline Code Tags
+code.prettyprint,
+code.pp {
+  display: inline-block;
+  padding: 0 8px;
+  color: $grey;
+  border: 1px solid transparentize($teal, .8);;
+  border-radius: 2px;
+  font-size: $tsSmall;
+}
+
+// Keyboard Tags
+kbd {
+  font-size: $tsSmall;
+  padding: 0.2em 0.6em;
+  border: 1px solid $yellow;
+  background: $white;
+  border-radius: 3px;
+  box-shadow: 0 .1em 0 rgba(0,0,0,0.2);
+}
