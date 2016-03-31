@@ -1,1 +1,74 @@
 @import "../main/variables";
+
+.page-header {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.card-container {
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.c-card {
+  position: relative;
+  margin: 1rem;
+  background-color: $red;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100%;
+  border-bottom: 5px inset black;
+  // Transitions
+  -webkit-transition: all 0.5s cubic-bezier(.43,.41,.22,.91);
+  -webkit-filter: grayscale(.8);
+  &:hover{
+      border-bottom-color: $yellow;
+    -webkit-filter: grayscale(0) saturate(1.2) contrast(100%);
+  }
+
+  // Adjust number of items per row.
+  width: 100%;
+  @media screen and (min-width: 40rem) {width: calc(50% - 2rem);}
+  @media screen and (min-width: 55rem) {width: calc(33.3333333% - 2rem);}
+  @media screen and (min-width: 75rem) {width: calc(20% - 2rem);}
+
+  display: flex; // So a element is 100% hight
+  a {
+    flex: 1;     // So a element is 100% hight
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    color: $white;
+    background: linear-gradient(135deg, rgba(0,0,0,.7) 0%,rgba(0,0,0,.3) 60%,rgba(0,0,0,.0) 100%),
+                linear-gradient(170deg, rgba(0,0,0,.7) 0%,rgba(0,0,0,.4) 50%,rgba(0,0,0,.0) 100%),
+                linear-gradient(270deg, rgba(0,0,0,.1) 0%,rgba(0,0,0,.0) 100%);
+  }
+
+  // The heading
+  h4 {
+    text-shadow: 0 0 10px rgba(0,0,0,0.8);
+
+    // Override default h4 styles
+    font-size: $tsPara;
+    line-height: $tLHrem;
+    font-weight: 500;
+    letter-spacing: .05rem;
+    text-transform: none;
+    font-variant: normal;
+    margin-bottom: 1rem;
+  }
+
+  // The descriptive box
+  p {
+    display: inline-block;
+    padding: 0 .5rem;
+    border: 1px solid transparentize($white, .5);
+    text-transform: lowercase;
+    font-variant: small-caps;
+    letter-spacing: .05rem;
+    font-size: $tsSmall;
+  }
+}

@@ -4,11 +4,11 @@
   }
 
   .c-card__image {
-    background-color: navy;
+    background-color: $black;
     background-image: url(/images/link-icon.png);
-    background-size: contain;
+    background-size: 3rem;
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right top;
   }
 }
 

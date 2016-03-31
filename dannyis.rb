@@ -15,6 +15,21 @@ module DannyIs
       require 'newrelic_rpm'
     end
 
+    configure do
+      Article.configure do |config|
+        config.articles_path = '../articles'
+        config.draft_articles_path = '../articles/drafts'
+        config.images_path = '../public/article-images'
+        config.articles_per_page = 2
+        config.development_mode = true if ENV['RACK_ENV'] == 'development'
+      end
+    end
+
+    before do
+      # Switch on Caching
+      cache_control :public, :must_revalidate, max_age: 60 if ENV['RACK_ENV'] == 'production'
+    end
+
     # --------------------- Simple Redirects ------------------- #
 
 
@@ -70,6 +85,7 @@ module DannyIs
 
 
     get '/writing/?' do
+      @articles = Article.published
       erb :writing
     end
 
@@ -111,6 +127,11 @@ module DannyIs
           erb :e404
         end
       end
+    end
+
+    not_found do
+      status 404
+      erb :e404
     end
 
   end

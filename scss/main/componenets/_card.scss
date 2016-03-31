@@ -1,5 +1,6 @@
 .c-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   background-color: $white;
   transition: box-shadow 0.25s ease 0s;
   border-radius: 2px;
@@ -8,9 +9,12 @@
 
   // Normal content Area
   &__content {
+    flex: 1;
     font-size: $tsSmall;
     line-height: $tLHrem;
     padding: $tLHrem;
+
+    &:empty {padding:0;}
   }
 
   // Title, when no image is included
@@ -30,6 +34,7 @@
 
   // A single button for the action area
   &__action.single-button {
+    border-top: none;
     padding: 0;
   }
   &__action.single-button > a:only-child.btn {

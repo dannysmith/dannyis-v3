@@ -17,8 +17,8 @@ gem 'foreman'
 # Modules
 gem 'builder'
 gem 'sass'
-# gem 'redcarpet'
-# gem 'pygments.rb'
+gem 'redcarpet'
+gem 'pygments.rb'
 # gem 'rouge'
 # gem 'simple-rss'
 
@@ -28,7 +28,7 @@ end
 
 group :test do
   gem 'rspec'
-  # gem 'factory_girl'
+  gem 'factory_girl'
 end
 
 group :development do

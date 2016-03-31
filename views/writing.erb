@@ -1,6 +1,22 @@
 <% content_for :title do %>🗒 Articles – Danny Smith<% end %>
 <% content_for :styles do %>
-  <link rel="stylesheet" href="css/pages/writing.css">
+  <link rel="stylesheet" href="/css/pages/writing.css">
 <% end %>
+<header class="page-header u-csl">
+  <h1>Writing</h1>
+  <p class="large">I mostly write over at <a href="http://medium.com/@dannysmith">medium.com</a> these days. Here are some of my older articles.</p>
+</header>
 
-<p>Writing</p>
+<ul class="card-container">
+<% @articles.each do |article| %>
+  <li class="c-card" <% unless article.images.empty? %>
+     style="
+     background-image:url(<%= article.images.first.url %>)"
+     <% end %>>
+    <a href="<%= article.url %>">
+      <h4><%= article.title %></h4>
+      <p>read article</p>
+    </a>
+  </li>
+<% end %>
+</ul>

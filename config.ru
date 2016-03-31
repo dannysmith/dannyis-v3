@@ -3,8 +3,8 @@ require 'dotenv'
 require 'sinatra/base'
 require 'sinatra/content_for'
 require 'net/http'
-# require 'yaml'
-# require 'redcarpet'
+require 'yaml'
+require 'redcarpet'
 # require 'active_support/all'
 
 Dotenv.load
