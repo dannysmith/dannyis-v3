@@ -11,12 +11,11 @@ a {
   a:not(.btn):hover,
   a:not(.btn):visited,
   a:not(.btn):active {
-    color: black;
     background-image: linear-gradient(to bottom, $cBG 75%, $cLinkUnderline 75%);
-    background-size: 5px 5px;
     background-position: 0 .95em;
+    background-size: 5px 5px;
     background-repeat: repeat-x;
-
+    color: black;
     text-shadow: 2px 0 $cBG,
                 -2px 0 $cBG,
                 -3px 0 $cBG,
@@ -24,7 +23,6 @@ a {
                 -1px 1px $cBG,
                  1px 1px $cBG;
   }
-
   a:not(.btn):hover {
     background-image: linear-gradient(to bottom, $cBG 75%, $cLinkHover 75%);
     color: $cLinkHover;

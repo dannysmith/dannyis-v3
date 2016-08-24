@@ -9,18 +9,18 @@ code.prettyprint,
 code.pp {
   display: inline-block;
   padding: 0 8px;
-  color: $grey;
   border: 1px solid transparentize($teal, .8);;
   border-radius: 2px;
+  color: $grey;
   font-size: $tsSmall;
 }
 
 // Keyboard Tags
 kbd {
-  font-size: $tsSmall;
   padding: 0.2em 0.6em;
   border: 1px solid $yellow;
-  background: $white;
   border-radius: 3px;
+  background: $white;
   box-shadow: 0 .1em 0 rgba(0,0,0,0.2);
+  font-size: $tsSmall;
 }

@@ -29,11 +29,11 @@ html {
 // A better looking default horizontal rule
 hr {
     display: block;
+    margin: 1em 0;
+    padding: 0;
     height: 1px;
     border: 0;
     border-top: 1px solid $black;
-    margin: 1em 0;
-    padding: 0;
 }
 
 // Remove the gap between audio, canvas, iframes,
@@ -50,9 +50,9 @@ video {
 
 //Remove default fieldset styles.
 fieldset {
-    border: 0;
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 // Allow only vertical resizing of textareas.
@@ -66,9 +66,9 @@ textarea {
 // ==========================================================================
 
 html {
-    font-family: $tfBody;
     color: $black;
     font-size: $typeBaseAtNarrowWidth * 1px;
+    font-family: $tfBody;
     line-height: $tLH; /* 27px @ 18px FS */
     font-variant-ligatures: common-ligatures discretionary-ligatures;
 }
@@ -98,9 +98,9 @@ h1, h2, h3, h4, h5 {
     font-size: $tsPara;
 }
 h1, .h1 {
+    font-weight: 300;
     font-size: $ts1;
     line-height: $tLHrem * 2;
-    font-weight: 300;
 }
 h2, .h2 {
     font-size: $ts2;
@@ -113,9 +113,9 @@ h3, .h3 {
 }
 
 h4, .h4 {
-    font-size: $ts3;
     text-transform: lowercase;
     font-variant: small-caps;
+    font-size: $ts3;
     line-height: $tLHrem;
 }
 h5, .h5 {
@@ -124,8 +124,8 @@ h5, .h5 {
 
 
 .large {
-    font-size: $ts4;
     font-weight: 300; // Light
+    font-size: $ts4;
     line-height: $tHLHrem * 3;
     -webkit-font-smoothing: antialiased;
 }
@@ -149,17 +149,17 @@ p.large + p {margin-top: $tLHrem * 2;}
 
 del {
   position: relative;
-  text-decoration: none;
   color: $cStrikethrough;
+  text-decoration: none;
 }
 
 del:after {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  left: 0;
   border-bottom: 1px solid $cStrikethrough;
   content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 60%;
 }
 
 // Marked Text
@@ -174,8 +174,8 @@ mark {
 
 body {
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .wrapper {

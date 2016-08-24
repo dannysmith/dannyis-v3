@@ -1,21 +1,21 @@
 table {
-  table-layout: fixed;
-  border-collapse: collapse;
-  border-spacing: 0;
   width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
 }
 
 th, td {
-  text-align: center;
   padding: $tHLHrem;
+  text-align: center;
 
   &.left {text-align: left}
 }
 
 th {
-  background-color: $yellow;
-  border-bottom: 1px solid $black;
   height: $tLHrem * 2;
+  border-bottom: 1px solid $black;
+  background-color: $yellow;
 }
 
 tr:nth-child(even) {
